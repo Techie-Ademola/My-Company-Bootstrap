@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Company Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        *:hover {
+            transition: .4s;
+        }
+        body {
+            margin: auto;
+        }
+        .jumbotron {
+            background-color: orangered;
+            padding: 90px 0px;
+            border-radius: 0px;
+        }
+        .company {
+            font-size: 50px;
+            color: white;
+        }
+        .Our-spec {
+            font-size: 20px;
+            color: white;
+        }
+        .bg-1 {
+            background-color: orangered;
+            border: 1px;
+        }
+        .bg-1:hover, .bg-1:focus {
+            background-color: silver;
+        }
+        .bg-2 {
+            background-color: orangered;
+        }
+        .where {
+            letter-spacing: 5px;
+            color: white !important;
+            margin-right: 0px;
+            font-size: 13px;
+            padding: 15px 22px !important;
+        }
+        /* *:focus-visible {
+            background-color: orangered;
+            color: white;
+        } */
+        
+        .touch{
+            border: 1px solid silver;
+            font-size: 17px;
+            font-family: Verdana;
+        }
+        .touch:hover {
+            background-color: lightgray !important;
+        }
+        .creatives {
+            border-radius: 0px;
+            border: 1px;
+        }
+        .creativeimg {
+            border-radius: 0px;
+        }
+        .comm {
+            color: orangered !important;
+        }
+        .sign-up:hover {
+            background-color: white !important;
+            color: orangered !important;
+        }
+        .pricehover:hover {
+            box-shadow: 0px 0px 50px lightgray;
+        }
+        .send-comment{
+            border: 1px solid silver;
+            font-size: 15px;
+            font-family: Verdana;
+        }
+
+        .send-comment:hover {
+            background-color: lightgray !important;
+        }
+        
+        .carousel-indicators li {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid #f4511e;
+            border-color: #f4511e;
+        }
+
+      .carousel-indicators li.active {
+            background-color: #f4511e;
+        }
+
+        .navbar-nav li a:hover, .navbar-nav li a:active {
+            color: #f4511e !important;
+            background-color: #fff !important;
+        }
+
+        .navbar-default .navbar-toggler {
+            border-color: transparent;
+            color: #fff !important;
+        }
+    </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">  
+    <nav class=" container-fluid navbar navbar-expand-md navbar-light bg-2 py-0 fixed-top">
+        <a class="navbar-brand text-secondary" href="#myPage" style="letter-spacing: 5px;">Logo</a>
+        <button class="navbar-toggler bg-1 py-1 my-2" onclick="" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon py-0"></span>
+        </button>
+        <nav class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                <a class="nav-link where" href="#About">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link where" href="#Services">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link where" href="#Portfolio">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link where" href="#Pricing">PRICING</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link where" href="#Contact">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </nav>    
+    <div class="container-sm-fluid text-center jumbotron" id="myPage">
+        <h1 class="company">Company</h1> 
+        <p class="Our-spec">We specialize in Re-imagined Tech Services</p> 
+        <div class="row mx-auto">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-danger" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <div class="container-md text-left pt-3" id="About"> 
+        <div class="row mx-2">
+            <div class="col-md-8">
+                <h2 class="py-5 mt-4 font-weight-bold" style="font-size: 27px">ABOUT COMPANY PAGE</h2>
+                <p style="font-size: 20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="pt-5 pb-2" style="font-size: 16px; color: gray;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur 
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+                        anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p><button class="btn btn-default btn-lg text-dark touch" type="button" id="button-addon1">Get in Touch</button></p>
+            </div>
+            <div class="col-md-4 text-center"><i class="fa fa-signal py-2 mt-5" aria-hidden="true" style="font-size: 160px;
+                color: orangered;"></i></div>
+        </div>
+    </div>
+
+    <div class="container-md-fluid text-left bg-light"> 
+        <div class="row mx-2">
+            <div class="col-md-4 text-center"><i class="fa fa-globe py-5 mt-5" aria-hidden="true" style="font-size: 200px;
+                color: orangered;"></i></div>
+            <div class="col-md-7">
+                <h2 class="py-5 mt-4 font-weight-bold" style="font-size: 27px">OUR VALUES</h2>
+                <p style="font-size: 20px"><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="pt-5 pb-2" style="font-size: 16px; color: gray;"><strong>VISION:</strong> Our vision lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur 
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+                        anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-md text-center pt-5" id="Services"> 
+        <div class="pb-3 mt-5 font-weight-bold" style="font-size: 27px">SERVICES</div>
+        <p style="font-size: 20px">What we offer</p>
+        <div class="row py-5">
+            <div class="col-md-4">
+                <i class="fa fa-power-off pb-3" aria-hidden="true" style="font-size: 50px; color: orangered"></i>
+                <p style="font-size: 20px">POWER</p>
+                <p class="pt-4 pb-2" style="font-size: 16px; color: gray;"> 
+                    Our vision lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-heart pb-3" aria-hidden="true" style="font-size: 50px; color: orangered"></i>
+                <p style="font-size: 20px">LOVE</p>
+                <p class="pt-4 pb-2" style="font-size: 16px; color: gray;">
+                    Our vision lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-lock pb-3" aria-hidden="true" style="font-size: 50px; color: orangered"></i>
+                <p style="font-size: 20px">JOB DONE</p>
+                <p class="pt-4 pb-2" style="font-size: 16px; color: gray;">
+                    Our vision lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-md text-center"> 
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fa fa-envira pb-3" aria-hidden="true" style="font-size: 50px; color: orangered; transform: rotate(90deg);"></i>
+                <p style="font-size: 20px">GREEN</p>
+                <p class="pt-4 pb-2" style="font-size: 16px; color: gray;">
+                    Our vision lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-certificate pb-3" aria-hidden="true" style="font-size: 50px; color: orangered"></i>
+                <p style="font-size: 20px">CERTIFIED</p>
+                <p class="pt-4 pb-2" style="font-size: 16px; color: gray;">
+                    Our vision lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-wrench pb-3" aria-hidden="true" style="font-size: 50px; color: orangered"></i>
+                <p style="font-size: 20px">HARD WORK</p>
+                <p class="pt-4 pb-2" style="font-size: 16px; color: gray;">
+                    Our vision lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center bg-light pt-4 pb-5" id="Portfolio"> 
+        <h2 class="py-5 mt-3 font-weight-bold" style="font-size: 27px">PORTFOLIO</h2>
+        <p style="font-size: 20px">What we have created</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mt-3 mr-auto">
+                    <div class="card text-center container-md-fluid creatives">
+                        <img src="./IMAGES/paris 1.jpg" class="card-img-top img-responsive creativeimg" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title font-weight-bold" style="font-size: 18px; color: gray; line-height: 2px;">Paris</h5>
+                        <p class="card-text" style="font-size: 16px; color: gray;">Yes, we built Paris</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 mr-auto">
+                    <div class="card text-center container-md-fluid creatives">
+                        <img src="./IMAGES/paris 2.jpg" class="card-img-top img-responsive creativeimg" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title font-weight-bold" style="font-size: 18px; color: gray; line-height: 2px;">New York</h5>
+                        <p class="card-text" style="font-size: 16px; color: gray;">We built New York</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <div class="card text-center container-md-fluid creatives">
+                        <img src="./IMAGES/paris 3.jpg" class="card-img-top img-responsive creativeimg" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title font-weight-bold" style="font-size: 18px; color: gray; line-height: 2px;">San Francisco</h5>
+                        <p class="card-text" style="font-size: 16px; color: gray;">Yes, San Fran is ours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="py-5 mt-5 font-weight-bold" style="font-size: 27px">WHAT OUR CUSTOMERS SAY</h2>
+
+            <div id="carouselExampleCaptions" class="carousel slide py-5" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" style="font-size: 18px; font-family: Verdana;">
+                  <div class="carousel-item active">  
+                    <em>"This company is the best. I am so happy with the result!"</em>
+                    <br>
+                    Michael Roe, Vice President, Comment Box
+                    
+                  </div>
+                  <div class="carousel-item">
+                    <em>"One word... WOW!!"</em>
+                    <br>
+                    John Doe, Salesman, Rep Inc
+                    
+                  </div>
+                  <div class="carousel-item">
+                    <em>"Could I... BE any more happy with this company?"</em>
+                    <br>
+                    Chandler Bing, Actor, FriendsAlot
+                    
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </button>
+            </div> 
+        </div>
+    </div>
+
+    <div class="container text-center pt-4 pb-5" id="Pricing">
+        <h2 class="py-5 mt-3 font-weight-bold" style="font-size: 27px">PRICING</h2>
+        <p style="font-size: 20px">Choose a payment plan that works for you</p>
+        <div class="row container">
+            <div class="col-md-4 mt-3">
+                <div class="text-center pb-5 pricehover" style="border: 1px solid orangered; font-size: 16px; color: gray;">
+                    <div class="container" style="background-color: orangered; padding:25px 0px; font-size:35px; color: white;">Basic</div>                       
+                    <p style="padding-top: 20px"><b>20</b> Lorem</p>
+                    <p><b>15</b> Ipsum</p>
+                    <p><b>5</b> Dolor</p>
+                    <p><b>2</b> Sit</p>
+                    <p><b>Endless</b> Amet</p>
+                    <hr>
+                    <p style="font-size: 40px;">$19</p>
+                    <p style="line-height: 1px; padding-bottom:30px">per month</p>
+                    <button class="sign-up" type="submit" style="padding: 8px 20px; background-color: orangered; color: white;
+                    border: 1px solid orangered; border-radius: 5px">Sign Up</button>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="text-center pb-5 pricehover" style="border: 1px solid orangered; font-size: 16px; color: gray;">
+                    <div class="container" style="background-color: orangered; padding:25px 0px; font-size:35px; color: white;">Pro</div>                       
+                    <p style="padding-top: 20px"><b>50</b> Lorem</p>
+                    <p><b>25</b> Ipsum</p>
+                    <p><b>10</b> Dolor</p>
+                    <p><b>5</b> Sit</p>
+                    <p><b>Endless</b> Amet</p>
+                    <hr>
+                    <p style="font-size: 40px;">$29</p>
+                    <p style="line-height: 1px; padding-bottom:30px">per month</p>
+                    <button class="sign-up" type="submit" style="padding: 8px 20px; background-color: orangered; color: white;
+                    border: 1px solid orangered; border-radius: 5px">Sign Up</button>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="text-center pb-5 pricehover" style="border: 1px solid orangered; font-size: 16px; color: gray;">
+                    <div class="container" style="background-color: orangered; padding:25px 0px; font-size:35px; color: white;">Premium</div>                       
+                    <p style="padding-top: 20px"><b>100</b> Lorem</p>
+                    <p><b>50</b> Ipsum</p>
+                    <p><b>25</b> Dolor</p>
+                    <p><b>10</b> Sit</p>
+                    <p><b>Endless</b> Amet</p>
+                    <hr>
+                    <p style="font-size: 40px;">$49</p>
+                    <p style="line-height: 1px; padding-bottom:30px">per month</p>
+                    <button class="sign-up" type="submit" style="padding: 8px 20px; background-color: orangered; color: white;
+                    border: 1px solid orangered; border-radius: 5px">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-light pt-4 pb-5 px-4" id="Contact">
+        <h2 class="py-5 mt-3 font-weight-bold text-center" style="font-size: 27px">CONTACT</h2>
+        <div class="row" style="color: gray;">
+            <div class="col-md-5">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Chicago, US</p>
+                <p><i class="fa fa-mobile" aria-hidden="true"></i> +00 1515151515</p>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> myemail@something.com</p>
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                <div class="row" style="float: right;">
+                    <div class="col-sm-12 form-group">
+                        <p><button class="btn btn-default text-dark send-comment" type="button" id="button-addon1">Send</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="img-fluid img-responsive" src="./IMAGES/location map.jpg" alt="Map">
+    <footer class="container-fluid text-center my-4 pb-4" style="font-size: 16px; color: grey;">
+        <a href="#myPage" title="To Top">
+            <i class="fa fa-angle-up py-4 text-danger font-weight-bolder" aria-hidden="true" style="font-size: 30px;"></i>
+        </a>
+        <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools"
+            style="color:rgb(74, 123, 214);">www.w3schools.com</a></p>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0c390bb7a0.js" crossorigin="anonymous"></script>
+</body>
+</html>
